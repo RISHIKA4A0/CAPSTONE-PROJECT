@@ -1,0 +1,147 @@
+<html>
+		<head>
+			<title>NOVEL STORE</title>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width" initial-scale=1>
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+		</head>
+		<style>
+			div{
+				color: black;
+				text-align: center;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+			}
+			img{
+				height: 200px;
+                width: 180px;
+				padding-bottom: 20px;
+			}
+			button{
+				margin-top: 10px;
+			}
+			figure{
+				margin: 50px;
+
+			}
+		</style>
+        <body background="https://i.pinimg.com/originals/de/92/0d/de920daddcd61aeda262da8e0eedae3a.jpg">
+			<div class="container mt-3">
+				<div class="row" >
+					<div class="col-lg-1"><i class="bi bi-list" style="font-size: 2rem;"></i></div>
+					<div class="col-lg-1"><i class="bi bi-house-door-fill" style="font-size: 2rem;"></i></div>
+					<div class="col-lg-8"><h2 class="display-6" style="color:midnightblue;font-weight:500;"></h2></div>
+					<div class="col-lg-1"><i class="bi bi-person-circle" style="font-size: 2rem;"></i></div>
+					<div class="col-lg-1"><i class="bi bi-cart-fill" style="font-size: 2rem;"></i></div>
+				</div><br>
+				<div>
+					<figure>
+						<img src="https://lh3.googleusercontent.com/guf8LSl1Wjl9YxFPLE4YPWcBAeuoIZmZCi7ettIMHKA8jwCL33hbPifSUVc4e2TeAw=w2247-h1264" class="mySlides w3-animate-fading" style="width: 100% ;height: 100%;padding: auto;border-radius: 2%;" >
+						<img src="https://carleplacecrossroadspath.net/wp-content/uploads/2020/10/The-Silent-Patient-Book-Club-Questions-Book-Club-Chat.jpg" class="mySlides w3-animate-fading" style="width: 100%;height: 100%;padding: auto;border-radius: 2%;"  >
+						<img src="https://i.ebayimg.com/00/s/NzY4WDEwMjQ=/z/7akAAOSw6ates9vK/$_86.JPG" class="mySlides w3-animate-fading" style="width: 100% ;height: 100%;padding: auto;border-radius: 2%;" >
+						<img src="https://img.washingtonpost.com/rf/image_606w/2010-2019/WashingtonPost/2014/11/19/Style/Images/books0041416364332.jpg" class="mySlides w3-animate-fading" style="width: 100% ;height: 100%;padding: auto;border-radius: 2%;" >
+						<img src="https://www.getunderlined.com/wp-content/uploads/2020/04/killing-november-i-npost-1380x850.jpg" class="mySlides w3-animate-fading" style="width: 100% ;height: 100%;padding: auto;border-radius: 2%;" >
+						<img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1583609054i/52192203._SR1200,630_.jpg" class="mySlides w3-animate-fading" style="width: 100% ;height: 100%;padding: auto;border-radius: 2%;" >
+						<img src="https://dvh1deh6tagwk.cloudfront.net/finder-au/wp-uploads/2022/03/It-Starts-With-Us_Supplied_1800x1000.jpg" class="mySlides w3-animate-fading" style="width: 100% ;height: 100%;padding: auto;border-radius: 2%;" >
+					</figure>
+				</div>
+				<script>
+					var myIndex = 0;
+                        carousel();
+
+                        function carousel() {
+							var i;
+							var x = document.getElementsByClassName("mySlides");
+							for (i = 0; i < x.length; i++) {
+								x[i].style.display = "none";  
+							}
+							myIndex++;
+							if (myIndex > x.length) {myIndex = 1}    
+							x[myIndex-1].style.display = "block";  
+							setTimeout(carousel, 3000);    
+						}
+				</script>
+                <div class="row">
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://www.slashfilm.com/wp/wp-content/images/harrypotter-mosscovers.jpg"/>
+						<b><br>HARRY POTTER SERIES FULL SET</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="5000/-"><del><small>6500/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Harry potter series full set">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://i5.walmartimages.com/asr/eb294d83-46cf-428a-ae8d-6760be2a5bd5_1.dcd75cf95cfa86c105e001f38bff031d.jpeg" >
+						<b><br>A SONG OF ICE AND FIRE</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="1100/-"><del><small>1350/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="A SONG OF ICE AND FIRE">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://www.deccanherald.com/sites/dh/files/article_images/2020/05/19/file76dz10rjyo71a09bo1y2-1386543392-1569699001.jpg" >
+						<b><br>THE SILENT PATIENT</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="899/-"><del><small>1000/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="THE SILENT PATIENT">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="http://2.bp.blogspot.com/-4H7DhRdzjp4/Tu9bdWS22fI/AAAAAAAAGSU/h2teEKdIDkk/s1600/Bhagavad+Gita+1.jpg">
+						<b><br>BHAGVAD-GITA</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="799/-"><del><small>900/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="BHAGVAD-GITA">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="http://litreactor.com/sites/default/files/images/column/2014/04/anne-frank-diary.jpg" >
+						<b><br>THE DIARY OF A YOUNG GIRL</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="649/-"><del><small>800/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="THE DIARY OF A YOUNG GIRL">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://tse1.mm.bing.net/th?id=OIP.j0DRe4ikYhdTUdwvfSHiFwHaJ2&pid=Api&P=0" >
+						<b><br>THE SHERLOCK HOLMES</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="799/-"><del><small>850/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="THE SHERLOCK HOLMES">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://tse2.mm.bing.net/th?id=OIP.AbhkxTyDyE8Aavo6-pu_tAHaK5&pid=Api&P=0" >
+						<b><br>THE FAULT IN OUR STARS</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="800/-"><del><small>870/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="THE FAULT IN OUR STARS">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://i1.wp.com/cgfewston.me/wp-content/uploads/2018/02/the_alchemist_graphic_novel_cover_by_vtishimura-d5az82r.jpg?resize=505%2C758&ssl=1">
+						<b><br>THE ALCHEMIST</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="900/-"><del><small>990/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="THE ALCHEMIST">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://i.thenile.io/r1000/9781338686531.jpg?r=608be426a8fc5">
+						<b><br>THE HUNGER GAMES</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="999/-"><del><small>1200/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="THE HUNGER GAMES">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+                    <div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://www.sanity.com.au/media/Images/fullimage/462140/SDC_2360545_2018-29-8--12-46-41.jpg" >
+						<b><br>AND THEN THERE WERE NONE</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="1250/-"><del><small>1399/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="AND THEN THERE WERE NONE">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="http://3.bp.blogspot.com/-emHUQsbcLlw/VBRioOUEIlI/AAAAAAAAELM/VjB8OlhrfK4/s1600/91Fhm6-%2BTXL._SL1500_.jpg">
+						<b><br>THE FIFTH WAVE</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="987/-"><del><small>1111/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="THE FIFTH WAVE">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781471154638/november-9-9781471154638_hr.jpg">
+						<b><br>NOVEMBER 9</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="950/-"><del><small>1050/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="NOVEMBER 9">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+                    <div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://n4.sdlcdn.com/imgs/j/k/o/WINGS-OF-FIRE-An-Autobiography-SDL359511909-1-449f0.jpg">
+						<b><br>WINGS OF FIRE</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="1100/-"><del><small>1200/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="WINGS OF FIRE">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+                    <div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://media.gqindia.com/wp-content/uploads/2020/04/Malgudi-Days.jpg">
+						<b><br>MALGUDI DAYS</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="600/-"><del><small>700/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="MALGUDI DAYS">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://tse1.mm.bing.net/th?id=OIP.277WoavWWq1pUQBKzvEDKwHaLF&pid=Api&P=0">
+						<b><br>THIRTEEN REASONS WHY</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="1150/-"><del><small>1250/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="THIRTEEN REASONS WHY">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://tse2.mm.bing.net/th?id=OIP.ygWPMbovJpTqGWNeGE9iEgHaJ_&pid=Api&P=0">
+						<b><br>LITTLE WOMEN</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="1150/-"><del><small>1300/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="LITTLE WOMEN">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://tse4.mm.bing.net/th?id=OIP.9LZum9pLgeUO3RjYpWPdAAAAAA&pid=Api&P=0">
+						<b><br>ALL I EVER WANT IS YOU</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="1350/-"><del><small>1450/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="ALL I EVER WANT IS YOU">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://tse1.mm.bing.net/th?id=OIP.ONWTt2aJnGfHUk9z3GYk6wAAAA&pid=Api&P=0">
+						<b><br>THE LOST CITY</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="900/-"><del><small>1000/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="THE LOST CITY">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://tse4.mm.bing.net/th?id=OIP.-YJYHbN1dX7108sEosglyQAAAA&pid=Api&P=0">
+						<b><br>WHEN THE NIGHT FALLS</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="1150/-"><del><small>1250/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="WHEN THE NIGHT FALLS">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+                </div><br><br>
+				<form action="cart1" method="GET">
+					<center><input type="submit" class="btn btn-success" style="width:30%;font-weight: bold;" value="GO TO CART"></center>
+				</form><br><br>
+            </div>
+		</body>
